@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_report_pos_report_discount_pivot" model="ir.ui.view">
+        <field name="name">report.pos.report.discount.pivot</field>
+        <field name="model">report.pos.report.discount</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="product_categ_id" type="row"/>
+                <field name="order_id" type="measure"/>
+                <field name="total_discount_price"  type="measure"/>
+                <field name="total_discount_card"  type="measure"/>
+                <field name="total_discount"  type="measure"/>
+                <field name="price_total" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+    <record id="view_report_pos_report_discount_tree" model="ir.ui.view">
+        <field name="name">report.pos.report.discount.tree</field>
+        <field name="model">report.pos.report.discount</field>
+        <field name="arch" type="xml">
+            <tree string="Point of Sale tree">
+                <field name="date"/>
+                <field name="order_id"/>
+                <field name="partner_id"/>
+                <field name="product_id"/>
+                <field name="state"/>
+                <field name="total_discount"/>
+                <field name="price_total"/>
+                <field name="average_price"/>
+                <field name="location_id"/>
+                <field name="company_id"/>
+                <field name="product_qty"/>
+                <field name="product_categ_id"/>
+                <field name="invoiced"/>
+                <field name="config_id"/>
+                <field name="pos_categ_id"/>
+                <field name="pricelist_id"/>
+                <field name="session_id"/>
+            </tree>
+        </field>
+    </record>
+    
+    <record id="view_report_pos_report_discount_search" model="ir.ui.view">
+        <field name="name">report.pos.report.discount.search</field>
+        <field name="model">report.pos.report.discount</field>
+        <field name="arch" type="xml">
+            <search string="Point of Sale Analysis">
+                <field name="date"/>
+                <field name="order_id"/>
+                <field name="partner_id"/>
+                <field name="product_id"/>
+                <field name="state"/>
+                <field name="total_discount"/>
+                <field name="price_total"/>
+                <field name="average_price"/>
+                <field name="location_id"/>
+                <field name="company_id"/>
+                <field name="product_qty"/>
+                <field name="product_categ_id"/>
+                <field name="invoiced"/>
+                <field name="config_id"/>
+                <field name="pos_categ_id"/>
+                <field name="pricelist_id"/>
+                <field name="session_id"/>
+
+                <filter name="today" string="Today" domain="[('date','like',time.strftime('%%Y-%%m-%%d'))]"/>
+                <filter name="this_month" string="This month" domain="[('date','like',time.strftime('%%Y-%%m'))]"/>
+                <filter name="this_year" string="This year" domain="[('date','like',time.strftime('%%Y'))]"/>
+                <filter name="january" string="January" domain="[('date','like',time.strftime('%%Y-01'))]"/>
+                <filter name="february" string="February" domain="[('date','like',time.strftime('%%Y-02'))]"/>
+                <filter name="march" string="March" domain="[('date','like',time.strftime('%%Y-03'))]"/>
+                <filter name="April" string="April" domain="[('date','like',time.strftime('%%Y-04'))]"/>
+                <filter name="may" string="May" domain="[('date','like',time.strftime('%%Y-05'))]"/>
+                <filter name="june" string="June" domain="[('date','like',time.strftime('%%Y-06'))]"/>
+                <filter name="july" string="July" domain="[('date','like',time.strftime('%%Y-07'))]"/>
+                <filter name="august" string="August" domain="[('date','like',time.strftime('%%Y-08'))]"/>
+                <filter name="september" string="September" domain="[('date','like',time.strftime('%%Y-09'))]"/>
+                <filter name="octomber" string="October" domain="[('date','like',time.strftime('%%Y-10'))]"/>
+                <filter name="november" string="November" domain="[('date','like',time.strftime('%%Y-11'))]"/>
+                <filter name="december" string="December" domain="[('date','like',time.strftime('%%Y-12'))]"/>
+                <separator/>
+
+                <group expand="1" string="Group By">
+                    <filter string="User" name="gr_user" context="{'group_by':'user_id'}"/>
+                    <filter string="State" name="gr_state" context="{'group_by':'state'}"/>
+                    <filter string="Partner" name="gr_partner_id" context="{'group_by':'partner_id'}"/>
+                    <filter string="Config" name="gr_config_id" context="{'group_by':'config_id'}"/>
+                    <filter string="Session" name="gr_session_id" context="{'group_by':'session_id'}"/>
+                    <filter string="Category" name="gr_product_categ_id" context="{'group_by':'product_categ_id'}"/>
+                    <filter string="POS Category" name="gr_pos_categ_id" context="{'group_by':'pos_categ_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_report_pos_report_discount_all" model="ir.actions.act_window">
+        <field name="name">Discount Report</field>
+        <field name="res_model">report.pos.report.discount</field>
+        <field name="view_mode">pivot,tree</field>
+        <field name="context">{'search_default_this_month':1}</field>
+    </record>
+
+    <menuitem id="menu_report_pos_report_discount_all" action="action_report_pos_report_discount_all" groups="point_of_sale.group_pos_manager" parent="point_of_sale.menu_point_rep" sequence="101"/>
+</odoo>

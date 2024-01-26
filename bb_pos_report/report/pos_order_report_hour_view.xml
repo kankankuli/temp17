@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="view_report_pos_order_pivot_hour_inh" model="ir.ui.view">
+        <field name="name">report.pos.order.pivot.hour.inh</field>
+        <field name="model">report.pos.order</field>
+        <field name="priority">2000</field>
+        <field name="arch" type="xml">
+            <pivot string="Point of Sale Analysis">
+                <field name="date" type="row"/>
+                <field name="hour" type="col"/>
+                <field name="order_id" type="measure"/>
+                <field name="price_total" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+    
+    <record id="action_report_pos_order_hour_all_inh" model="ir.actions.act_window">
+        <field name="name">POS Sales by Hour</field>
+        <field name="res_model">report.pos.order</field>
+        <field name="view_mode">pivot,graph,tree</field>
+        <field name="view_id" ref="view_report_pos_order_pivot_hour_inh"/>
+        <field name="context">{'search_default_month':1}</field>
+    </record>
+
+    <menuitem action="action_report_pos_order_hour_all_inh" id="menu_report_pos_order_hour_all_inh" parent="point_of_sale.menu_point_rep" sequence="4"/>
+</odoo>
