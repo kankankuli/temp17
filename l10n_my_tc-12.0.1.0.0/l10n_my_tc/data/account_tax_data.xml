@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+    <!-- Account Tags -->
+    <record id="tag_my_01" model="account.account.tag">
+        <field name="name">Chart of Account Malaysia - Trading Company</field>
+        <field name="applicability">taxes</field>
+    </record>
+    
+    
+    
+    <record id="tag_my_02" model="account.account.tag">
+        <field name="name">Tax Balance To Pay</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_03" model="account.account.tag">
+        <field name="name">Tax Received</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_04" model="account.account.tag">
+        <field name="name">Tax Received @ 0%</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_05" model="account.account.tag">
+        <field name="name">Tax Received @ 6% _</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_06" model="account.account.tag">
+        <field name="name">Tax Received @ 10% _</field>
+        <field name="applicability">taxes</field>
+    </record>
+    
+    
+    
+    <record id="tag_my_07" model="account.account.tag">
+        <field name="name">Tax Paid</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_08" model="account.account.tag">
+        <field name="name">Tax Paid @ 6% _</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_09" model="account.account.tag">
+        <field name="name">Tax Paid @ 10% _</field>
+        <field name="applicability">taxes</field>
+    </record>
+    
+    
+    <record id="tag_my_10" model="account.account.tag">
+        <field name="name">Tax Paid @ 6% TX-E43 (E33)</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_11" model="account.account.tag">
+        <field name="name">Tax Paid @ 6% BL</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_12" model="account.account.tag">
+        <field name="name">Tax Paid @ 6% IM</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_13" model="account.account.tag">
+        <field name="name">Tax Paid @ 6% TX-RE</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_14" model="account.account.tag">
+        <field name="name">Tax Paid @ 6% IGDS  **not used</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_15" model="account.account.tag">
+        <field name="name">Tax Paid @ 0% NR</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_16" model="account.account.tag">
+        <field name="name">Tax Paid @ 0% ZP</field>
+        <field name="applicability">taxes</field>
+    </record>
+    
+    
+    
+    <record id="tag_my_17" model="account.account.tag">
+        <field name="name">MES Purchase Tax **not used</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_18" model="account.account.tag">
+        <field name="name">Out of Scope Taxes</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_19" model="account.account.tag">
+        <field name="name">Out of Scope Purchase Tax</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_20" model="account.account.tag">
+        <field name="name">Out of Scope Sales Tax</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_21" model="account.account.tag">
+        <field name="name">Exempted Taxes</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_22" model="account.account.tag">
+        <field name="name">Exempted Purchase Tax</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_23" model="account.account.tag">
+        <field name="name">Exempted Sales Tax ES43</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_24" model="account.account.tag">
+        <field name="name">Exempted Sales Tax ES (ESN33)</field>
+        <field name="applicability">taxes</field>
+    </record>
+    
+    
+    
+    
+    <record id="tag_my_25" model="account.account.tag">
+        <field name="name">Tax Bases</field>
+        <field name="applicability">taxes</field>
+    </record>
+    
+    
+    
+    <record id="tag_my_26" model="account.account.tag">
+        <field name="name">Base of Taxed Sales</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_27" model="account.account.tag">
+        <field name="name">Sales 6% Standard</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_28" model="account.account.tag">
+        <field name="name">Sales 6% Standard SR</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_29" model="account.account.tag">
+        <field name="name">Sales 6% Standard DS</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_30" model="account.account.tag">
+        <field name="name">Sales 0% Standard</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_31" model="account.account.tag">
+        <field name="name">Sales Exempted</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_32" model="account.account.tag">
+        <field name="name">Sales Exempted ES (ES33)</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_33" model="account.account.tag">
+        <field name="name">Sales Exempted ES43 (ES)N33</field>
+        <field name="applicability">taxes</field>
+    </record>
+    
+    
+    
+    
+    <record id="tag_my_34" model="account.account.tag">
+        <field name="name">Base of Taxed Purchases</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_35" model="account.account.tag">
+        <field name="name">Purchase 6% Standard TX6</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_36" model="account.account.tag">
+        <field name="name">Purchase 6% Standard TX-N43 (N33)</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_37" model="account.account.tag">
+        <field name="name">Purchase 6% Standard TX-E43 (E33)</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_38" model="account.account.tag">
+        <field name="name">Purchase 6% Standard BL</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_39" model="account.account.tag">
+        <field name="name">Purchase 6% Standard IM</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_40" model="account.account.tag">
+        <field name="name">Purchase 6% Standard TX-RE</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_41" model="account.account.tag">
+        <field name="name">Purchase 6% Standard IGDS **not used</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_42" model="account.account.tag">
+        <field name="name">Purchase 0% Standard NR</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_43" model="account.account.tag">
+        <field name="name">Purchase 0% Standard ZP</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_44" model="account.account.tag">
+        <field name="name">Purchase Imports Under IS (MES)</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_45" model="account.account.tag">
+        <field name="name">Purchase Exempted</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_46" model="account.account.tag">
+        <field name="name">Purchase Out Of Scope</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_47" model="account.account.tag">
+        <field name="name">Sales Out Of Scope</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_48" model="account.account.tag">
+        <field name="name">Tax Received SRCA-S **not used</field>
+        <field name="applicability">taxes</field>
+    </record>
+    
+    
+    <record id="tag_my_49" model="account.account.tag">
+        <field name="name">Tax Received @ 6% SRCA-C **not used</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_50" model="account.account.tag">
+        <field name="name">Tax Paid @ 6% TXCA **not used</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_51" model="account.account.tag">
+        <field name="name">Sales Standard SRCA-S **not used</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_52" model="account.account.tag">
+        <field name="name">Sales 6% Standard SRCA-C **not used</field>
+        <field name="applicability">taxes</field>
+    </record>
+    <record id="tag_my_53" model="account.account.tag">
+        <field name="name">Purchase 6% Standard TXCA **not used</field>
+        <field name="applicability">taxes</field>
+    </record>
+
+    <!-- Sales Tax account-->
+
+
+
+    <record id="my_sale_tax_es_0" model="account.tax.template">
+        <field name="name">Sales Tax 0% ES</field>
+        <field name="description">0% ES - Exempt supplies under GST.</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="account_id" ref="account_account_791"/>
+        <field name="refund_account_id" ref="account_account_791"/>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_23'),ref('tag_my_32')])]"/>
+        <field name="tax_group_id" ref="tax_group_0"/>
+    </record>
+
+    <record id="my_sale_tax_ds_6" model="account.tax.template">
+        <field name="name">Sales Tax 6% DS</field>
+        <field name="description">6% DS - Deemed supplies (e.g. transfer or disposal of business assets without consideration).</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">6</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="account_id" ref="account_account_792"/>
+        <field name="refund_account_id" ref="account_account_792"/>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_06'), ref('tag_my_29')])]"/>
+        <field name="tax_group_id" ref="tax_group_6"/>
+    </record>
+
+    <record id="my_sale_tax_esn_0" model="account.tax.template">
+        <field name="name">Sales Tax 0% ES43</field>
+        <field name="description">0% ES43 - Incidental Exempt Supplies</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="account_id" ref="account_account_793"/>
+        <field name="refund_account_id" ref="account_account_793"/>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_24'),ref('tag_my_33')])]"/>
+        <field name="tax_group_id" ref="tax_group_0"/>
+    </record>
+
+    <record id="my_sale_tax_os_0" model="account.tax.template">
+        <field name="name">Sales Tax 0% OS</field>
+        <field name="description">0% OS - Out-of-scope supplies.</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="account_id" ref="account_account_794"/>
+        <field name="refund_account_id" ref="account_account_794"/>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_20'),ref('tag_my_47')])]"/>
+        <field name="tax_group_id" ref="tax_group_0"/>
+    </record>
+
+    <record id="my_sale_tax_zrl_0" model="account.tax.template">
+        <field name="name">Sales Tax 0% ZRL</field>
+        <field name="description">0% ZRL - Local supply of goods or services which are subject to zero rated supplies.</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="account_id" ref="account_account_795"/>
+        <field name="refund_account_id" ref="account_account_795"/>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_04'), ref('tag_my_30')])]"/>
+        <field name="tax_group_id" ref="tax_group_0"/>
+    </record>
+    
+    <record id="my_sale_tax_zre_0" model="account.tax.template">
+        <field name="name">Sales Tax 0% ZRE</field>
+        <field name="description">0% ZRE - Exportation of goods or services which are subject to zero rated supplies.</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="account_id" ref="account_account_795"/>
+        <field name="refund_account_id" ref="account_account_795"/>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_04'), ref('tag_my_30')])]"/>
+        <field name="tax_group_id" ref="tax_group_0"/>
+    </record>
+    
+
+    <record id="my_sale_tax_sr_6" model="account.tax.template">
+        <field name="name">Sales Tax 6% SR</field>
+        <field name="description">6% SR - Standard-rated supplies with GST charged.</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">6</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="account_id" ref="account_account_796"/>
+        <field name="refund_account_id" ref="account_account_796"/>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_05'),ref('tag_my_28')])]"/>
+        <field name="tax_group_id" ref="tax_group_6"/>
+    </record>
+    
+    <record id="my_sale_tax_rs_0" model="account.tax.template">
+        <field name="name">Sales Tax 0% RS</field>
+        <field name="description">0% RS - Relief supply under GST.</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="account_id" ref="account_account_796b"/>
+        <field name="refund_account_id" ref="account_account_796b"/>
+        <field name="chart_template_id" ref="my_chart_template"/>
+<!--        <field name="tag_ids" eval="[(6,0,[ref('tag_my_05'),ref('tag_my_28')])]"/>-->
+        <field name="tax_group_id" ref="tax_group_0"/>
+    </record>
+    
+    <record id="my_sale_tax_gs_0" model="account.tax.template">
+        <field name="name">Sales Tax 0% GS</field>
+        <field name="description">0% GS - Disregarded supplies.</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="account_id" ref="account_account_796c"/>
+        <field name="refund_account_id" ref="account_account_796c"/>
+        <field name="chart_template_id" ref="my_chart_template"/>
+<!--        <field name="tag_ids" eval="[(6,0,[ref('tag_my_05'),ref('tag_my_28')])]"/>-->
+        <field name="tax_group_id" ref="tax_group_0"/>
+    </record>
+    
+    <record id="my_sale_tax_ajs_0" model="account.tax.template">
+        <field name="name">Sales Tax 6% AJS</field>
+        <field name="description">6% AJS - Any adjustment made to Output Tax e.g. : Longer period adjustment, Bad Debt recover, outstanding invoice &gt; 6 months &amp; other output tax adjustments.</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">6</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="account_id" ref="account_account_796d"/>
+        <field name="refund_account_id" ref="account_account_796d"/>
+        <field name="chart_template_id" ref="my_chart_template"/>
+<!--        <field name="tag_ids" eval="[(6,0,[ref('tag_my_05'),ref('tag_my_28')])]"/>-->
+        <field name="tax_group_id" ref="tax_group_6"/>
+    </record>
+    
+<!--    sst -->
+    <record id="my_sale_tax_sst_6" model="account.tax.template">
+        <field name="name">Sales Tax 6% SST</field>
+        <field name="description">6% SST</field>
+        <field name="price_include" eval="0"/>
+        <field name="amount">6</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="account_id" ref="account_account_796e"/>
+        <field name="refund_account_id" ref="account_account_796e"/>
+        <field name="chart_template_id" ref="my_chart_template"/>
+<!--        <field name="tag_ids" eval="[(6,0,[ref('tag_my_05'),ref('tag_my_28')])]"/>-->
+        <field name="tax_group_id" ref="tax_group_6"/>
+    </record>
+    
+    
+
+<!--    <record id="my_sale_tax_srca_s_na" model="account.tax.template">-->
+<!--        <field name="name">Sales Tax SRCA-S</field>-->
+<!--        <field name="description">SRCA-S</field>-->
+<!--        <field name="price_include" eval="0"/>-->
+<!--        <field name="amount">0</field>-->
+<!--        <field name="amount_type">percent</field>-->
+<!--        <field name="type_tax_use">sale</field>-->
+<!--        <field name="account_id" ref="account_account_797"/>-->
+<!--        <field name="refund_account_id" ref="account_account_797"/>-->
+<!--        <field name="chart_template_id" ref="my_chart_template"/>-->
+<!--        <field name="tag_ids" eval="[(6,0,[ref('tag_my_48'),ref('tag_my_51')])]"/>-->
+<!--        <field name="tax_group_id" ref="tax_group_0"/>-->
+<!--    </record>-->
+
+<!--    <record id="my_sale_tax_srca_c_6" model="account.tax.template">-->
+<!--        <field name="name">Sales Tax 6% SRCA-C</field>-->
+<!--        <field name="description">6% SRCA-C</field>-->
+<!--        <field name="price_include" eval="0"/>-->
+<!--        <field name="amount">6</field>-->
+<!--        <field name="amount_type">percent</field>-->
+<!--        <field name="type_tax_use">sale</field>-->
+<!--        <field name="account_id" ref="account_account_798"/>-->
+<!--        <field name="refund_account_id" ref="account_account_798"/>-->
+<!--        <field name="chart_template_id" ref="my_chart_template"/>-->
+<!--        <field name="tag_ids" eval="[(6,0,[ref('tag_my_49'),ref('tag_my_52')])]"/>-->
+<!--        <field name="tax_group_id" ref="tax_group_6"/>-->
+<!--    </record>-->
+
+
+
+
+    <!-- Purchases Tax -->
+
+    <record id="my_purchase_tax_txn43_6" model="account.tax.template">
+        <field name="name">Purchase Tax 6% TX-N43</field>
+        <field name="description">6% TX-N43 - Purchases with GST incurred directly attributable to non-incidental exempt supplies.</field>
+        <field name="account_id" ref="account_account_738"/>
+        <field name="refund_account_id" ref="account_account_738"/>
+        <field name="price_include" eval="0"/>
+        <field name="amount">6</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_09'), ref('tag_my_36')])]"/>
+        <field name="tax_group_id" ref="tax_group_6"/>
+    </record>
+
+    <record id="my_purchase_tax_txe43_6" model="account.tax.template">
+        <field name="name">Purchase Tax 6% TX-43</field>
+        <field name="description">6% TX-E43 - Purchases with GST incurred directly attributable to incidental exempt supplies.</field>
+        <field name="account_id" ref="account_account_739"/>
+        <field name="refund_account_id" ref="account_account_739"/>
+        <field name="price_include" eval="0"/>
+        <field name="amount">6</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_10'),ref('tag_my_37')])]"/>
+        <field name="tax_group_id" ref="tax_group_6"/>
+    </record>
+
+    <record id="my_purchase_tax_bl_6" model="account.tax.template">
+        <field name="name">Purchase Tax 6% BL</field>
+        <field name="description">6% BL - Purchases with GST incurred but not claimable (Disallowance of Input Tax) (e.g. medical expenses for staff).</field>
+        <field name="account_id" ref="account_account_740"/>
+        <field name="refund_account_id" ref="account_account_740"/>
+        <field name="price_include" eval="0"/>
+        <field name="amount">6</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_11'),ref('tag_my_38')])]"/>
+        <field name="tax_group_id" ref="tax_group_6"/>
+    </record>
+
+    <record id="my_purchase_tax_im_6" model="account.tax.template">
+        <field name="name">Purchase Tax 6% IM</field>
+        <field name="description">6% IM - Import of goods with GST incurred.</field>
+        <field name="account_id" ref="account_account_741"/>
+        <field name="refund_account_id" ref="account_account_741"/>
+        <field name="price_include" eval="0"/>
+        <field name="amount">6</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_12'),ref('tag_my_39')])]"/>
+        <field name="tax_group_id" ref="tax_group_6"/>
+    </record>
+
+    <record id="my_purchase_tax_txre_6" model="account.tax.template">
+        <field name="name">Purchase Tax 6% TX-RE</field>
+        <field name="description">6% TX-RE - Purchases with GST incurred that is not directly attributable to taxable or exempt supplies.</field>
+        <field name="account_id" ref="account_account_742"/>
+        <field name="refund_account_id" ref="account_account_742"/>
+        <field name="price_include" eval="0"/>
+        <field name="amount">6</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_13'),ref('tag_my_40')])]"/>
+        <field name="tax_group_id" ref="tax_group_6"/>
+    </record>
+
+<!--    <record id="my_purchase_tax_me_0" model="account.tax.template">-->
+<!--        <field name="name">Purchase Tax 6% IGDS</field>-->
+<!--        <field name="description">6% IGDS</field>-->
+<!--        <field name="account_id" ref="account_account_743"/>-->
+<!--        <field name="refund_account_id" ref="account_account_743"/>-->
+<!--        <field name="price_include" eval="0"/>-->
+<!--        <field name="amount">6</field>-->
+<!--        <field name="amount_type">percent</field>-->
+<!--        <field name="type_tax_use">purchase</field>-->
+<!--        <field name="chart_template_id" ref="my_chart_template"/>-->
+<!--        <field name="tag_ids" eval="[(6,0,[ref('tag_my_14'),ref('tag_my_41')])]"/>-->
+<!--        <field name="tax_group_id" ref="tax_group_6"/>-->
+<!--    </record>-->
+
+    <record id="my_purchase_tax_nr_0" model="account.tax.template">
+        <field name="name">Purchase Tax 0% NR</field>
+        <field name="description">0% NR - Purchases from non GST-registered supplier with no GST incurred.</field>
+        <field name="account_id" ref="account_account_744"/>
+        <field name="refund_account_id" ref="account_account_744"/>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_15'),ref('tag_my_42')])]"/>
+        <field name="tax_group_id" ref="tax_group_0"/>
+    </record>
+
+    <record id="my_purchase_tax_zp_0" model="account.tax.template">
+        <field name="name">Purchase Tax 0% ZP</field>
+        <field name="description">0% ZP - Purchases from GST-registered supplier with no GST incurred. (e.g. supplier provides transportation of goods that qualify as international services).</field>
+        <field name="account_id" ref="account_account_745"/>
+        <field name="refund_account_id" ref="account_account_745"/>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_16'),ref('tag_my_43')])]"/>
+        <field name="tax_group_id" ref="tax_group_0"/>
+    </record>
+
+    <record id="my_purchase_tax_op_0" model="account.tax.template">
+        <field name="name">Purchase Tax 0% OP</field>
+        <field name="description">0% OP - Purchase transactions which is out of the scope of GST legislation (e.g. purchase of goods overseas).</field>
+        <field name="account_id" ref="account_account_746"/>
+        <field name="refund_account_id" ref="account_account_746"/>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_19'),ref('tag_my_46')])]"/>
+        <field name="tax_group_id" ref="tax_group_0"/>
+    </record>
+
+    <record id="my_purchase_tax_ep_0" model="account.tax.template">
+        <field name="name">Purchase Tax 0% EP</field>
+        <field name="description">0% EP - Purchases exempted from GST. E.g. purchase of residential property or financial services.</field>
+        <field name="account_id" ref="account_account_747"/>
+        <field name="refund_account_id" ref="account_account_747"/>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="my_chart_template"/>
+        <field name="tag_ids" eval="[(6,0,[ref('tag_my_22'),ref('tag_my_45')])]"/>
+        <field name="tax_group_id" ref="tax_group_0"/>
+    </record>
+    
+    <record id="my_purchase_tax_gp_0" model="account.tax.template">
+        <field name="name">Purchase Tax 0% GP</field>
+        <field name="description">0% EP - Purchase transactions which disregarded under GST legislation (e.g. purchase within GST Group registration).</field>
+        <field name="account_id" ref="account_account_747b"/>
+        <field name="refund_account_id" ref="account_account_747b"/>
+        <field name="price_include" eval="0"/>
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="my_chart_template"/>
+<!--        <field name="tag_ids" eval="[(6,0,[ref('tag_my_22'),ref('tag_my_45')])]"/>-->
+        <field name="tax_group_id" ref="tax_group_0"/>
+    </record>
+    
+    <record id="my_purchase_tax_ajp_6" model="account.tax.template">
+        <field name="name">Purchase Tax 6% AJP</field>
+        <field name="description">6% EP - Any adjustment made to Input Tax e.g.: Bad Debt Relief &amp; other input tax adjustment.</field>
+        <field name="account_id" ref="account_account_747c"/>
+        <field name="refund_account_id" ref="account_account_747c"/>
+        <field name="price_include" eval="0"/>
+        <field name="amount">6</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="my_chart_template"/>
+<!--        <field name="tag_ids" eval="[(6,0,[ref('tag_my_22'),ref('tag_my_45')])]"/>-->
+        <field name="tax_group_id" ref="tax_group_6"/>
+    </record>
+    
+    <record id="my_purchase_tax_sst_6" model="account.tax.template">
+        <field name="name">Purchase Tax 6% SST</field>
+        <field name="description">6% SST</field>
+        <field name="account_id" ref="account_account_747d"/>
+        <field name="refund_account_id" ref="account_account_747d"/>
+        <field name="price_include" eval="0"/>
+        <field name="amount">6</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">purchase</field>
+        <field name="chart_template_id" ref="my_chart_template"/>
+<!--        <field name="tag_ids" eval="[(6,0,[ref('tag_my_22'),ref('tag_my_45')])]"/>-->
+        <field name="tax_group_id" ref="tax_group_6"/>
+    </record>
+    
+    
+    
+    
+
+<!--    <record id="my_purchase_tax_mes_0" model="account.tax.template">-->
+<!--        <field name="name">Purchase Tax MES</field>-->
+<!--        <field name="description">0% MES</field>-->
+<!--        <field name="account_id" ref="account_account_748"/>-->
+<!--        <field name="refund_account_id" ref="account_account_748"/>-->
+<!--        <field name="price_include" eval="0"/>-->
+<!--        <field name="amount">0</field>-->
+<!--        <field name="amount_type">percent</field>-->
+<!--        <field name="type_tax_use">purchase</field>-->
+<!--        <field name="chart_template_id" ref="my_chart_template"/>-->
+<!--        <field name="tag_ids" eval="[(6,0,[ref('tag_my_17'),ref('tag_my_44')])]"/>-->
+<!--        <field name="tax_group_id" ref="tax_group_0"/>-->
+<!--    </record>-->
+
+<!--    <record id="my_purchase_tax_tx7_6" model="account.tax.template">-->
+<!--        <field name="name">Purchase Tax 6% TX7</field>-->
+<!--        <field name="description">6% TX7</field>-->
+<!--        <field name="account_id" ref="account_account_749"/>-->
+<!--        <field name="refund_account_id" ref="account_account_749"/>-->
+<!--        <field name="price_include" eval="0"/>-->
+<!--        <field name="amount">6</field>-->
+<!--        <field name="amount_type">percent</field>-->
+<!--        <field name="type_tax_use">purchase</field>-->
+<!--        <field name="chart_template_id" ref="my_chart_template"/>-->
+<!--        <field name="tag_ids" eval="[(6,0,[ref('tag_my_08'),ref('tag_my_35')])]"/>-->
+<!--        <field name="tax_group_id" ref="tax_group_6"/>-->
+<!--    </record>-->
+
+<!--    <record id="my_purchase_tax_txca_6" model="account.tax.template">-->
+<!--        <field name="name">Purchase Tax 6% TXCA</field>-->
+<!--        <field name="description">6% TXCA</field>-->
+<!--        <field name="account_id" ref="account_account_750"/>-->
+<!--        <field name="refund_account_id" ref="account_account_750"/>-->
+<!--        <field name="price_include" eval="0"/>-->
+<!--        <field name="amount">6</field>-->
+<!--        <field name="amount_type">percent</field>-->
+<!--        <field name="type_tax_use">purchase</field>-->
+<!--        <field name="chart_template_id" ref="my_chart_template"/>-->
+<!--        <field name="tag_ids" eval="[(6,0,[ref('tag_my_50'),ref('tag_my_53')])]"/>-->
+<!--        <field name="tax_group_id" ref="tax_group_6"/>-->
+<!--    </record>-->
+
+    </data>
+</odoo>
