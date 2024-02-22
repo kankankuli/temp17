@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="wbl_calculator_in_pos.PosCalculatorPopup" owl="1">
+        <div class="popup popup-calculator" style="width: auto;">
+            <div class="modal-header drag-handle wbl-popup-header">
+                <h4 class="modal-title title"><t t-esc="props.title" /></h4>
+                <span t-if="props.subtitle" class="subtitle"><t t-esc="props.subtitle"/></span>
+            </div>
+            <main class="body" style="margin-top: 0px; margin-bottom: 0px;">
+                <div class="calculator-app">
+                    <div class="popup-input value active wbl-input form-control-lg">
+                        <span class="input-value" id="expression">
+                        </span>
+                    </div>
+                    <div class="popup-input value active wbl-input form-control-lg">
+                        <span class="input-value" id="result">
+                        </span>
+                    </div>
+                    <div class="buttons">
+                        <button class="operator" t-on-mousedown.prevent="calculateOperator" data-key="%">%</button>
+                        <button class="clear-entry" t-on-mousedown.prevent="clearInputBuffer" data-key="CE">CE</button>
+                        <button class="clear" t-on-mousedown.prevent="clearInputBuffer" data-key="C">C</button>
+                        <button class="backspace" t-on-mousedown.prevent="sendBackspace" data-key="backspace">
+                            ⌫
+                        </button>
+                        <button class="number" t-on-mousedown.prevent="sendNumberInput" data-key="7">7</button>
+                        <button class="number" t-on-mousedown.prevent="sendNumberInput" data-key="8">8</button>
+                        <button class="number" t-on-mousedown.prevent="sendNumberInput" data-key="9">9</button>
+                        <button class="operator" t-on-mousedown.prevent="calculateOperator" data-key="*">x</button>
+                        <button class="number" t-on-mousedown.prevent="sendNumberInput" data-key="4">4</button>
+                        <button class="number" t-on-mousedown.prevent="sendNumberInput" data-key="5">5</button>
+                        <button class="number" t-on-mousedown.prevent="sendNumberInput" data-key="6">6</button>
+                        <button class="operator" t-on-mousedown.prevent="calculateOperator" data-key="+">+</button>
+                        <button class="number" t-on-mousedown.prevent="sendNumberInput" data-key="1">1</button>
+                        <button class="number" t-on-mousedown.prevent="sendNumberInput" data-key="2">2</button>
+                        <button class="number" t-on-mousedown.prevent="sendNumberInput" data-key="3">3</button>
+                        <button class="operator" t-on-mousedown.prevent="calculateOperator" data-key="-">-</button>
+                        <button class="operator" t-on-mousedown.prevent="calculateOperator" data-key="/">/</button>
+                        <button class="number" t-on-mousedown.prevent="sendNumberInput" data-key="0">0</button>
+                        <button class="decimal" t-on-mousedown.prevent="sendDecimalInput" data-key=".">.</button>
+                        <button class="equals" t-on-mousedown.prevent="calculateEqualOperator" data-key="=">=</button>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer centered modal-footer justify-content-center wbl-popup-footer">
+                <button class="button cancel btn btn-lg btn-secondary" t-on-mousedown.prevent="cancel">
+                    <span>Close</span>
+                </button>
+            </footer>
+        </div>
+    </t>
+</templates>

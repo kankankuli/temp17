@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--# Author      : Weblytic Labs Pvt. Ltd. (<https://store.weblyticlabs.com/>)-->
+<!--# Copyright(c): 2023-Present Weblytic Labs Pvt. Ltd.-->
+<odoo>
+   <data>
+       <record id="wbl_pos_calculator_config_view_form" model="ir.ui.view">
+           <field name="name">wbl.pos.calculator.config.view.form</field>
+           <field name="model">pos.config</field>
+           <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+           <field name="arch" type="xml">
+               <xpath expr="//setting[@id='other_devices']" position="after">
+                   <setting id="pos_virtual_calculator" string="Virtual Calculator" help="Use calculator window for instant mathematical calculation">
+                       <field name="virtual_calculator" />
+                   </setting>
+               </xpath>
+           </field>
+       </record>
+   </data>
+</odoo>

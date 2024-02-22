@@ -1,0 +1,26 @@
+.calculator-app {
+    padding: 10px 25px 10px 25px;
+}
+.wbl-popup-footer {
+	padding: 5px !important;
+}
+.wbl-popup-header {
+	padding: 15px !important;
+}
+.wbl-input {
+	text-align: right !important;
+}
+.calculator-app .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.calculator-app button {
+    width: 46px;
+    height: 46px;
+    font-size: 1.1rem;
+    border: 1px solid #E0E2E6;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #444;
+}
