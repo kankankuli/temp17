@@ -5,6 +5,7 @@
                 <script type="text/javascript" src="/pos_add_product_barcode_no_reload/static/src/js/pos_scan.js"/>
                 <script type="text/javascript" src="/pos_add_product_barcode_no_reload/static/src/js/pos_db.js"/>
                 <script type="text/javascript" src="/pos_add_product_barcode_no_reload/static/src/js/ProductScreen.js"/>
+                <script type="text/javascript" src="/pos_add_product_barcode_no_reload/static/src/js/abc.js"/>
             </xpath>
         </template>
 </odoo>
