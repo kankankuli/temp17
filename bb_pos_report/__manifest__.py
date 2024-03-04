@@ -22,8 +22,8 @@ This module can show Point of sale addictional report
     'data': [
         'security/ir.model.access.csv',
         'report/pos_order_report_hour_view.xml',
-        'report/pos_session_report_view.xml',
-        'report/pos_order_report_discount_view.xml',
+      #  'report/pos_session_report_view.xml',
+      #  'report/pos_order_report_discount_view.xml',
     ],
     'qweb': [],
     "images": ["static/description/images/banner.gif","static/description/images/bb_ss1.png","static/description/images/bb_ss2.png","static/description/images/bb_ss3.png"],
