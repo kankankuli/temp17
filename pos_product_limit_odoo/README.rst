@@ -1,32 +1,35 @@
-Pos Product Limit In Odoo 16
-============================
+.. image:: https://img.shields.io/badge/license-LGPL--1-green.svg
+    :target: https://www.gnu.org/licenses/lgpl-3.0-standalone.html
+    :alt: License: LGPL-3
 
-This module  used to allow products to user or only access products
-related to allowed categories or Allow access of products/category to user
+Pos Product Limit Odoo
+======================
+This module is used to limit the number of product loads into the pos session. User can limit the products.
 
 Installation
 ============
-	- www.odoo.com/documentation/16.0/setup/install.html
+	- www.odoo.com/documentation/17.0/setup/install.html
 	- Install our custom addon
 
 License
--------
+=======
 General Public License, Version 3 (LGPL v3).
-(https://www.odoo.com/documentation/user/16.0/legal/licenses/licenses.html)
+(https://www.gnu.org/licenses/lgpl-3.0-standalone.html)
 
 Company
 -------
-* 'Cybrosys Techno Solutions <https://cybrosys.com/>`__
+* `Cybrosys Techno Solutions <https://cybrosys.com/>`__
 
 Credits
 -------
-* Developer:
-(V16) Archana V  @ Cybrosys
-
+* Developer: (V16) Archana V
+             (V17) Gayathri V
+Contact : odoo@cybrosys.com
 
 Contacts
 --------
 * Mail Contact : odoo@cybrosys.com
+* Website : https://cybrosys.com
 
 Bug Tracker
 -----------
@@ -34,11 +37,13 @@ Bugs are tracked on GitHub Issues. In case of trouble, please check there if you
 
 Maintainer
 ==========
+.. image:: https://cybrosys.com/images/logo.png
+   :target: https://cybrosys.com
+
 This module is maintained by Cybrosys Technologies.
 
-For support and more information, please visit https://www.cybrosys.com
+For support and more information, please visit `Our Website <https://cybrosys.com/>`__
 
 Further information
 ===================
 HTML Description: `<static/description/index.html>`__
-
